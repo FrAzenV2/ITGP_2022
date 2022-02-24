@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    public void Shoot(Vector3 directionNormalized, float power = 200)
+    public void Shoot(Vector3 directionNormalized, float power = 20)
     {
         _rb.useGravity = false;
         _rb.AddForce(directionNormalized * power, ForceMode.VelocityChange);
